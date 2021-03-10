@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">PORTFOLIO</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">HOME</a></li>
+							
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/sean-batkiewicz" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/sbatkiewicz/feedback-app" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									
+									<h1>Emaily - Feedback App<br />
+									</h1>
+								</header>
+								<!--<div class="image main"><img src="images/pic01.jpg" alt="" /></div>-->
+								<div class="w3-content w3-display-container">
+  <img class="mySlides" src="images/Emaily/Home.png" style="width:100%">
+  <img class="mySlides" src="images/Emaily/Credits.png" style="width:100%">
+  <img class="mySlides" src="images/Emaily/Form.png" style="width:100%">
+  <img class="mySlides" src="images/Emaily/Confirmation.png" style="width:100%">
+  <img class="mySlides" src="images/Emaily/Dash.png" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<br>
+								<h2>Feedback?</h2>
+								<p>Emaily is an app that any service-provider can use to receive feedback regarding their service by logging in and purchasing credits securely on my site, and filling out a simple survey that includes an email list of their clients. The app then sends an email to each recipient and collects the data from the client about how they answered the survey emailed to them. These results are then easily accessible to the service-provider on my site in their dashboard.</p>
+                <a href="http://mysterious-taiga-10772.herokuapp.com/" alt="hosted site">Try it here!</a>
+                <br>
+								<h3>Technologies Used:</h3>
+								<ul>
+									<li>Used Node.js with Express to create route handlers</li>
+									<li>Designed React app frontend</li>
+                  <li>Google oauth flow for secure login</li>
+									<li>Implemented Strip API for secure payments</li>
+									<li>Automate email process with SendGrid API</li>
+									<li>Connected app to MongoDB to store user data</li>
+								</ul>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(630) 728-0093</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">seanvbatkiewicz@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/sean-batkiewicz" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/sbatkiewicz/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
